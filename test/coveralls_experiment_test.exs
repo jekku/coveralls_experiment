@@ -9,6 +9,7 @@ defmodule CoverallsExperimentTest do
   test "conditional" do
     assert CoverallsExperiment.conditional() == :hello
     assert CoverallsExperiment.conditional(:default) == :hello
+    assert CoverallsExperiment.conditional(:miss_this_intentionally) == :missed
     assert CoverallsExperiment.conditional(:unknown) == :world
   end
 end
