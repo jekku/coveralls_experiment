@@ -28,7 +28,8 @@ defmodule CoverallsExperiment.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:excoveralls, "~> 0.10", only: :test}
+      {:excoveralls, git: "git@github.com:duffelhq/excoveralls.git", branch: "pass-flag_name"}
+      # {:excoveralls, "~> 0.10", only: :test}
     ]
   end
 end
