@@ -15,4 +15,12 @@ defmodule CoverallsExperiment do
   def hello do
     :world
   end
+
+  def conditional(value \\ :default) do
+    case value do
+      :default -> :hello
+      :miss_this_intentionally -> :missed
+      _everything_else -> :world
+    end
+  end
 end

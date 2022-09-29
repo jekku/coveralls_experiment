@@ -5,4 +5,10 @@ defmodule CoverallsExperimentTest do
   test "greets the world" do
     assert CoverallsExperiment.hello() == :world
   end
+
+  test "conditional" do
+    assert CoverallsExperiment.conditional() == :hello
+    assert CoverallsExperiment.conditional(:default) == :hello
+    assert CoverallsExperiment.conditional(:unknown) == :world
+  end
 end
